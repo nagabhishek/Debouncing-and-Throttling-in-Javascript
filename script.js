@@ -20,7 +20,4 @@ function throttle(callback, interval) {
     }
   };
 }
-
-function better() {
-  debounce(getData, 500);
-}
+const better = debounce(getData, 500);
