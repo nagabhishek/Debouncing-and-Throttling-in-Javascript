@@ -2,18 +2,25 @@
   <head>
     <meta charset="UTF-8" />
     <script src="script.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <section>
-      <h2>Using Debouncing</h2>
-      <label>Enter key to search</label><br />
-      <input type="text" onkeyup="better()" />
-    </section>
-    <section>
-      <h2>Using Throttle</h2>
-      <label>Enter key to search</label><br />
-      <input type="text" onkeyup="betterUsingThrottle()" />
-    </section>
+    <div class="container">
+      <section>
+        <h2>Using Debouncing</h2>
+        <label>Enter key to search</label><br />
+        <input type="text" onkeyup="better()" />
+      </section>
+      <section>
+        <h2>Using Throttle</h2>
+        <label>Enter key to search</label><br />
+        <input type="text" onkeyup="betterUsingThrottle()" />
+      </section>
+    </div>
   </body>
 </html>
