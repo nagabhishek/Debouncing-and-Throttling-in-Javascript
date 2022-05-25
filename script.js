@@ -20,5 +20,6 @@ function throttle(callback, interval) {
     }
   };
 }
+
 const better = debounce(getData, 500);
 const betterUsingThrottle = throttle(getData, 500);
