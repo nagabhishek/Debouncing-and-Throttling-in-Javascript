@@ -1,5 +1,6 @@
-function getData() {
-  console.log('Getting data...');
+function getData(id) {
+  const input = document.querySelector(`#${id}`);
+  console.log('Getting data:', input.value);
 }
 
 function debounce(callback, interval) {

@@ -14,12 +14,16 @@
       <section>
         <h2>Using Debouncing</h2>
         <label>Enter key to search</label><br />
-        <input type="text" onkeyup="better()" />
+        <input type="text" id="input1" onkeyup="better('input1')" />
       </section>
       <section>
         <h2>Using Throttle</h2>
         <label>Enter key to search</label><br />
-        <input type="text" onkeyup="betterUsingThrottle()" />
+        <input
+          type="text"
+          id="input2"
+          onkeyup="betterUsingThrottle('input2')"
+        />
       </section>
     </div>
   </body>
