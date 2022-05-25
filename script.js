@@ -2,11 +2,11 @@ function getData() {
   console.log('Getting data...');
 }
 
-function debounce(func, wait) {
+function debounce(callback, wait) {
   let timeout;
   return (...arg) => {
     clearTimeout(timeout);
-    timeout = setTimeout(() => func.apply(this, arg), wait);
+    timeout = setTimeout(() => callback.apply(this, arg), wait);
   };
 }
 
